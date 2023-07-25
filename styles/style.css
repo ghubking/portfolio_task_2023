@@ -1,0 +1,75 @@
+.main_bg {
+    width:100%; height:100vh;
+    background: url(../images/7598163.jpg) no-repeat center fixed;
+    background-size:cover;
+    position: relative;
+}
+.main_bg .category1 {
+    height:100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    }
+    .main_bg .category1 .mypicture {
+        width:200px; height:200px;
+        border:6px solid #fff; 
+        border-radius:50%; overflow: hidden;
+
+}
+.main_bg .category1 .mypicture img {width: 100%;}
+.main_bg .category1 h1 {padding-top: 30px;font-size: 2rem;font-family: 'Lobster', cursive;}
+.main_bg .category1 .gauge {padding-top: 20px;}
+.main_bg .category1 .gauge span {
+    width:300px; 
+    height:1px;
+    border: 5px solid #fff;
+    display: block;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.main_bg .category1 p {font-weight: 600;margin-bottom: 20px;}
+.main_bg .category1 .sns_profile {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
+.main_bg .category1 .sns_profile a {display: flex; flex-flow: column wrap; align-items: center;margin-right: 20px;}
+.main_bg .category1 .sns_profile a img {width: 25px;height: 25px;}
+.main_bg .category1 .sns_profile a span {display: none;}
+.main_bg .category2 {}
+.main_bg .category2 .menu_line {
+    position: absolute;
+    top:800px; left: 940px;
+
+}
+.main_bg .category2 .menu_line a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+
+}
+.main_bg .category2 .menu_line a span {
+    width:30px; 
+    height:1px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    margin-bottom: 5px;
+
+
+    
+}
+.main_bg .category2 .txt_animation {}
+.main_bg .category2 .txt_animation .txt1 {}
+.main_bg .category2 .txt_animation .txt1 img {}
+.main_bg .category2 .txt_animation .txt2 {}
+.main_bg .category2 .txt_animation .txt2 img {}
+.main_bg .category3 {}
+.main_bg .category3 .contents {}
+.main_bg .category3 .contents ul {}
+.main_bg .category3 .contents ul li {}
+.main_bg .category3 .contents ul li a {}
+.main_bg .category3 .contents ul li a img {}
+.main_bg .category3 .contents ul li a h2 {}
+.main_bg .category3 .contents ul li a p {}
+.main_bg .category4 {}
+.main_bg .category4 .hp_no {}
+.main_bg .category4 .hp_no p {}
