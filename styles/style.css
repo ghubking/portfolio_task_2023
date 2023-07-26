@@ -1,75 +1,202 @@
-.main_bg {
-    width:100%; height:100vh;
-    background: url(../images/7598163.jpg) no-repeat center fixed;
+main {
+    background:url(../images/7598163.jpg) no-repeat fixed 75%,0;
     background-size:cover;
-    position: relative;
+    position: relative; overflow: hidden;
+
 }
-.main_bg .category1 {
+.main_bg {
     height:100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-top: 200px;
+
     }
-    .main_bg .category1 .mypicture {
+.main_bg .mypicture {
         width:200px; height:200px;
         border:6px solid #fff; 
         border-radius:50%; overflow: hidden;
-
+        animation: photo 3s linear alternate infinite;
 }
-.main_bg .category1 .mypicture img {width: 100%;}
-.main_bg .category1 h1 {padding-top: 30px;font-size: 2rem;font-family: 'Lobster', cursive;}
-.main_bg .category1 .gauge {padding-top: 20px;}
-.main_bg .category1 .gauge span {
+.main_bg .mypicture:hover ~.gauge .progress{
+    transform:scaleX(1)
+}
+.main_bg .mypicture img {
+    width: 100%;
+}
+.main_bg h1 {
+    padding-top: 30px;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(45deg, white,purple,pink,orange,lime,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: text_grad 10s linear alternate infinite;
+}
+.main_bg .gauge {
+    overflow:hidden; 
+    border-radius:10px; 
     width:300px; 
-    height:1px;
-    border: 5px solid #fff;
-    display: block;
-    border-radius: 30px;
-    margin-bottom: 20px;
-}
-.main_bg .category1 p {font-weight: 600;margin-bottom: 20px;}
-.main_bg .category1 .sns_profile {display: flex; flex-flow: row nowrap; justify-content: center; align-items: center;}
-.main_bg .category1 .sns_profile a {display: flex; flex-flow: column wrap; align-items: center;margin-right: 20px;}
-.main_bg .category1 .sns_profile a img {width: 25px;height: 25px;}
-.main_bg .category1 .sns_profile a span {display: none;}
-.main_bg .category2 {}
-.main_bg .category2 .menu_line {
-    position: absolute;
-    top:800px; left: 940px;
-
-}
-.main_bg .category2 .menu_line a {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-
-
-}
-.main_bg .category2 .menu_line a span {
-    width:30px; 
-    height:1px;
-    border: 3px solid #000;
-    border-radius: 30px;
-    margin-bottom: 5px;
-
-
+    height:10px; 
+    background:#fff; 
+    margin:20px 0;
     
 }
-.main_bg .category2 .txt_animation {}
-.main_bg .category2 .txt_animation .txt1 {}
-.main_bg .category2 .txt_animation .txt1 img {}
-.main_bg .category2 .txt_animation .txt2 {}
-.main_bg .category2 .txt_animation .txt2 img {}
-.main_bg .category3 {}
-.main_bg .category3 .contents {}
-.main_bg .category3 .contents ul {}
-.main_bg .category3 .contents ul li {}
-.main_bg .category3 .contents ul li a {}
-.main_bg .category3 .contents ul li a img {}
-.main_bg .category3 .contents ul li a h2 {}
-.main_bg .category3 .contents ul li a p {}
-.main_bg .category4 {}
-.main_bg .category4 .hp_no {}
-.main_bg .category4 .hp_no p {}
+.main_bg .gauge .progress {
+    display:block; width:300px; height:10px;
+    background:#ff00ff; transform:scaleX(0);
+    transition:all 3s; transform-origin:left top;
+}
+
+.main_bg p {
+    font-weight: 600;
+    margin-bottom: 20px;}
+main .sns_profile {
+    display: flex; 
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+main .sns_profile a {
+    width:25px; height:25px;
+    display:flex; 
+    flex-flow:column nowrap; 
+    align-items:center;
+    margin-right: 20px;
+}
+main .sns_profile a:nth-of-type(3) {
+    margin-right: 0;
+} 
+main .sns_profile a img {
+    width: 25px;
+    height: 25px;}
+main .sns_profile a span {
+    font-family: 'Lobster', cursive; color:#fff;
+    background:#222; padding:5px; opacity:0;
+    margin-top: 10px;
+}
+main .sns_profile a:hover span {
+    opacity: 1;
+}
+main .menu_line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 100px;
+    
+    
+}
+main .menu_line a {
+    margin-bottom:500px; 
+    width:30px; height:30px;
+    display:flex; 
+    flex-flow:column nowrap; 
+    justify-content:space-around;
+}
+main .menu_line a span {
+    width:100%; height:5px; 
+    border-radius:5px; 
+    background:#000;
+    transition:all 0.5s;
+}
+main .menu_line a span:nth-child(1) {
+    transform-origin:left center;
+}
+main .menu_line a span:nth-child(2) {}
+main .menu_line a span:nth-child(3) {
+    transform-origin:left center;
+}
+main .menu_line a:hover span:nth-child(1) {
+    transform:rotate(45deg) translate(4px,-4px);
+}
+main .menu_line a:hover span:nth-child(2) {
+    opacity: 0;
+}
+main .menu_line a:hover span:nth-child(3) {
+    transform:rotate(-45deg) translate(3px,4px);
+}
+main .txt_animation {
+    
+    
+}
+main .txt_animation .txt1 {
+    width:150%; height:200px;
+    background:url(../images/bg2.png) repeat-x;
+    position:absolute; top:800px;
+    transform:rotate(-10deg) translateX(-100px) ;
+    animation:text_bg 60s linear alternate-reverse infinite;
+
+    
+    
+            }
+main .txt_animation .txt2 {
+    width:200%; height:200px;
+    background:rgba(0,0,0,0.8) url(../images/bg3.png) repeat-x;
+    position:absolute; top:1000px;
+    transform:rotate(10deg) translateX(-100px) ;
+    animation:text_bg 60s linear alternate-reverse infinite;
+    
+            
+}
+main .contents {
+    
+
+
+}
+main .contents ul {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .contents ul li {
+    width:300px; height:350px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+main .contents ul li:hover {
+    filter:drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
+} 
+main .contents ul li a img {
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transition: all 1s;
+}
+main .contents ul li a img:hover {scale:1.02;}
+main .contents ul li a div {
+    background: #fff;
+    padding: 10px 0 10px 0;
+}
+main .contents ul li a h2 {font-weight: 600;line-height: 20px;}
+main .contents ul li a p {line-height: 20px;}
+main .hp_no {
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+main .hp_no p {    
+    font-size: 2.5rem;
+    line-height: 60px;
+    padding-bottom: 100px;
+    color: #fff; text-shadow:0 0 4px #000;
+}
+@keyframes photo {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-30px);}
+}
+@keyframes text_grad {
+    0% {background-position-x:0;}
+    100% {background-position-x:400%;}
+}
+@keyframes text_bg {
+    0% {background-position-x:0;}
+    100% {background-position-x:-10000px;}
+}
