@@ -2,7 +2,6 @@ main {
     background:url(../images/7598163.jpg) no-repeat fixed 75%,0;
     background-size:cover;
     position: relative; overflow: hidden;
-
 }
 .main_bg {
     height:100%;
@@ -12,7 +11,6 @@ main {
     align-items: center;
     overflow: hidden;
     padding-top: 200px;
-
     }
 .main_bg .mypicture {
         width:200px; height:200px;
@@ -43,14 +41,12 @@ main {
     height:10px; 
     background:#fff; 
     margin:20px 0;
-    
 }
 .main_bg .gauge .progress {
     display:block; width:300px; height:10px;
     background:#ff00ff; transform:scaleX(0);
     transition:all 3s; transform-origin:left top;
 }
-
 .main_bg p {
     font-weight: 600;
     margin-bottom: 20px;}
@@ -87,8 +83,6 @@ main .menu_line {
     flex-flow: row nowrap;
     justify-content: center;
     margin-top: 100px;
-    
-    
 }
 main .menu_line a {
     margin-bottom:500px; 
@@ -119,34 +113,22 @@ main .menu_line a:hover span:nth-child(2) {
 main .menu_line a:hover span:nth-child(3) {
     transform:rotate(-45deg) translate(3px,4px);
 }
-main .txt_animation {
-    
-    
-}
+main .txt_animation {}
 main .txt_animation .txt1 {
     width:150%; height:200px;
     background:url(../images/bg2.png) repeat-x;
     position:absolute; top:800px;
     transform:rotate(-10deg) translateX(-100px) ;
     animation:text_bg 60s linear alternate-reverse infinite;
-
-    
-    
-            }
+}
 main .txt_animation .txt2 {
     width:200%; height:200px;
     background:rgba(0,0,0,0.8) url(../images/bg3.png) repeat-x;
     position:absolute; top:1000px;
     transform:rotate(10deg) translateX(-100px) ;
     animation:text_bg 60s linear alternate-reverse infinite;
-    
-            
 }
-main .contents {
-    
-
-
-}
+main .contents {}
 main .contents ul {
     max-width: 1260px;
     margin: 0 auto;
@@ -159,7 +141,6 @@ main .contents ul li {
     text-align: center;
     margin-top: 150px;
 }
-
 main .contents ul li:hover {
     filter:drop-shadow(5px 5px 5px rgba(0,0,0,0.7));
 } 
@@ -180,7 +161,6 @@ main .hp_no {
     max-width: 1260px;
     margin: 0 auto;
     text-align: center;
-
 }
 main .hp_no p {    
     font-size: 2.5rem;
